@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favico.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <p class="version">Portfolio V1.0</p>
+
+    <!-- desktop -->
+    <nav id="desktop-nav">
+        <div>
+            <div class="nav-bar"></div>
+            <ul class="nav-links">
+                <li><a href="#home">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="rectangle">
+            <div class="section__text">
+                <p class="hello" >Hey there! My name is</p>
+                <p class="name">Konstantinos Schoretsanitis.</p>
+                <p class="status">I am a Computer Science Student.</p>
+            </div>
+            <div class="background-circle"></div>
+            <div class="image-container">
+                <img src="./assets/ghost2.svg" draggable="false" alt="my logo">
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/cv-en.pdf')">CV ENG</button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/cv-gr.pdf')">CV GR</button>
+            </div> 
+        </div>
+        
+
+        <div class="social_container">
+            <div class="line_top"></div>
+            <div class="line_bot"></div>
+            <div class="social_icons">
+                <a href="https://github.com/kschorets3" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/konstantinos-schoretsanitis-57b759326/" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>   
+
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <a href="#about"><div class="label label_about"><p>About me</p></div></a>
+        <div class="cmd">  
+            <div class="cmd_header">
+                <div class="cmd_title"></div>
+                <div class="cmd_red"></div>
+                <div class="cmd_yellow"></div>
+                <div class="cmd_green"></div>
+            </div>
+            <div class="cmd_text"> 
+                I am currently a student in the Department of Computer Science and Telecommunications at the University of Thessaly, nearing the completion of my degree.<br><br>
+                Driven by a deep passion for programming, computers, and all things technology-related, I am highly motivated to constantly expand my knowledge and actively seek opportunities to learn and develop my skills further.<br><br>
+                In addition to my academic pursuits, I am currently experimenting with HTML, CSS, and JavaScript while also diving into SQL to strengthen my web development and database management skills.<br><br>
+                <b>kschorets@localhost:~$</b> <span class="blink">_</span><br> 
+            </div>
+        </div>
+        <!-- lamp -->
+        <div class="lamp-container">
+            <div class="lamp-base"></div>
+            <div class="tube"></div>
+            <div class="lamp-shade"></div>
+            <div class="light"></div>
+            <div class="horizontal-cable"></div>
+            <div class="vertical-cable"></div>
+            <div class="table"></div>
+            <!-- Toggle switch -->
+            <label class="switch">
+                <input class="toggle" type="checkbox" id="lightSwitch">
+                <span class="slider"></span>
+                <span class="card-side"></span>
+            </label>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <a href="#projects"><div class="label label_projects"><p>Projects</p></div></a>
+        <div class="container">
+            <div class="grid-item" 
+                data-title="Calculator" 
+                data-description="This project is a simple calculator application built using Python and the CustomTkinter library. it provides a user-friendly interface with a dark theme and offers both basic arithmetic operations and some advanced mathematical functions."
+                data-technologies='["PYTHON", "CUSTOMTKINTER"]'
+                data-source-link="https://github.com/kschorets3/Calculator-app.git">
+                <div class="project_icon"><img src="./assets/calculator.svg" draggable="false" alt="Calculator logo"></div>
+                <div class="project_text">
+                    <h2 class="project_title">Calculator</h2>
+                    <p class="project_subtitle">Simple calculator app.</p>
+                </div>
+            </div>
+            <div class="grid-item" 
+                data-title="ToDo-list" 
+                data-description="This is a ToDo List application built using Python. It provides a graphical user interface for users to manage their tasks, including adding new tasks, removing existing tasks, and clearing all tasks. The application uses SQLite for data persistence."
+                data-technologies='["PYTHON", "CUSTOMTKINTER", "SQLite"]'
+                data-source-link="https://github.com/kschorets3/ToDo-List-app.git">
+                <div class="project_icon"><img src="./assets/todo.svg" draggable="false" alt="logo"></div>
+                <div class="project_text">
+                    <h2 class="project_title">ToDo List</h2>
+                    <p class="project_subtitle">Simple todo list app.</p>
+                </div>
+            </div>
+
+            <div class="grid-item" 
+                data-title="Personal Portfolio" 
+                data-description="This is a porfolio project to showcase my personal projects."
+                data-technologies='["HTML", "CSS", "JS"]'
+                data-source-link="https://github.com/kschorets3/kschorets.github.io.git">
+                <div class="project_icon"><img src="./assets/portfolio.svg" draggable="false" alt="logo"></div>
+                <div class="project_text">
+                    <h2 class="project_title">Portfolio</h2>
+                    <p class="project_subtitle">This portfolio site.</p>
+                </div>
+            </div>
+
+            <div class="grid-item" 
+                data-title="Weather app" 
+                data-description="Simple weather application using API........[Under Development]"
+                data-technologies='[]'
+                data-source-link="">
+                <div class="project_icon"><img src="./assets/weather.svg" draggable="false" alt="logo"></div>
+                <div class="project_text">
+                    <h2 class="project_title">Weather App</h2>
+                    <p class="project_subtitle">Weather app-using API.</p>
+                </div>
+            </div>
+
+            <div class="grid-item" 
+                data-title="Budgeting Tool" 
+                data-description="Αpp that helps manage income and expenses.     [Under Development]"
+                data-technologies='[]'
+                data-source-link="">
+                <div class="project_icon"><img src="./assets/budget.svg" draggable="false" alt="logo"></div>
+                <div class="project_text">
+                    <h2>Budgeting Tool</h2>
+                    <p>Income and expenses manager.</p>
+                </div>
+            </div>
+
+            <div class="grid-item" 
+                data-title="Chat Application" 
+                data-description="Real-time chat application......................[Under Development]"
+                data-technologies='[]'
+                data-source-link="">
+                <div class="project_icon"><img src="./assets/chat.svg" draggable="false" alt="logo"></div>
+                <div class="project_text">
+                    <h2>Chat App</h2>
+                    <p>Real-time chat app.</p>
+                </div>
+            </div>  
+
+            <div class="grid-item" 
+                data-title="Chat Application" 
+                data-description="Αpp that helps manage income and expenses. [Under Development]"
+                data-technologies='[]'
+                data-source-link="">
+                <div class="project_icon"><img src="./assets/mlm.svg" draggable="false" alt="logo"></div>
+                <div class="project_text">
+                    <h2>Machine Learning Model</h2>
+                    <p>Trained model that makes predictions.</p>
+                </div>
+            </div> 
+
+            <div class="grid-item" data-title="N/A" data-description=".............." data-technologies='["N/A"]' data-source-link=""><div class="project_icon"><img src="./assets/questionmark.svg" draggable="false" alt="logo"></div><div class="project_text"><h2 class="project_title">N/A</h2><p class="project_subtitle">....</p></div></div>
+            <div class="grid-item" data-title="N/A" data-description=".............." data-technologies='["N/A"]' data-source-link=""><div class="project_icon"><img src="./assets/questionmark.svg" draggable="false" alt="logo"></div><div class="project_text"><h2 class="project_title">N/A</h2><p class="project_subtitle">....</p></div></div>
+            <div class="grid-item" data-title="N/A" data-description=".............." data-technologies='["N/A"]' data-source-link=""><div class="project_icon"><img src="./assets/questionmark.svg" draggable="false" alt="logo"></div><div class="project_text"><h2 class="project_title">N/A</h2><p class="project_subtitle">....</p></div></div>
+            <div class="grid-item" data-title="N/A" data-description=".............." data-technologies='["N/A"]' data-source-link=""><div class="project_icon"><img src="./assets/questionmark.svg" draggable="false" alt="logo"></div><div class="project_text"><h2 class="project_title">N/A</h2><p class="project_subtitle">....</p></div></div>
+            <div class="grid-item" data-title="N/A" data-description=".............." data-technologies='["N/A"]' data-source-link=""><div class="project_icon"><img src="./assets/questionmark.svg" draggable="false" alt="logo"></div><div class="project_text"><h2 class="project_title">N/A</h2><p class="project_subtitle">....</p></div></div>
+            <div class="grid-item" data-title="N/A" data-description=".............." data-technologies='["N/A"]' data-source-link=""><div class="project_icon"><img src="./assets/questionmark.svg" draggable="false" alt="logo"></div><div class="project_text"><h2 class="project_title">N/A</h2><p class="project_subtitle">....</p></div></div>
+            <div class="grid-item" data-title="N/A" data-description=".............." data-technologies='["N/A"]' data-source-link=""><div class="project_icon"><img src="./assets/questionmark.svg" draggable="false" alt="logo"></div><div class="project_text"><h2 class="project_title">N/A</h2><p class="project_subtitle">....</p></div></div>
+            <div class="grid-item" data-title="N/A" data-description=".............." data-technologies='["N/A"]' data-source-link=""><div class="project_icon"><img src="./assets/questionmark.svg" draggable="false" alt="logo"></div><div class="project_text"><h2 class="project_title">N/A</h2><p class="project_subtitle">....</p></div></div>
+        </div>
+            
+        <div class="project_info">
+            <div class="arrow_button"><img src="./assets/arrow.svg" draggable="false" alt="Close"></div>
+            <div class="project_title" id="data-title"></div>
+            <div class="project_description" id="data-description"></div>
+            <div class="project_technologies" id="data-technologies"></div>
+            <div class="data_source_link" id="data-source-link"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->    
+    <section id="contact" class="contact-section">
+        <a href="#contact"><div class="label label_contact"><div>Contact Me</div></div></a>
+        <div class="label label_contact_shadow"></div>
+        <div class="contact_container">
+            <div class="line_top_left"></div>
+            <div class="line_top_right"></div>
+            <div class="line_bot_left"></div>
+            <div class="line_bot_right"></div>
+            <div class="contact_info">
+                <div class="row1">
+                    <div class="email">
+                        <i class="fas fa-envelope"></i>
+                        <span>Schoretsanitisk@gmail.com</span>
+                    </div>
+                    <div class="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <span>www.linkedin.com/in/kschorets
+                        </span>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Trikala, Athens, Greece</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="thanks_scrolling">
+            <p>"Thanks for Scrolling"</p>
+        </div>
+    </section>
+    
+
+    <!-- Logo and menu for mobile (dropdown menu) -->
+    <nav id="mobile-nav">
+        <div class="name">Konstantinos Schoretsanitis</div>
+        <div class="mobile-menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+   
+   
+      
+    <script src="script.js"></script>
+    
+</body>
+</html>
